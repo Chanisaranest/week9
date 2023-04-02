@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./Back-End
+      dockerfile: Dockerfile
+    image: chanisaranest/my-backend_image:1.0
+
+  frontend:
+    build:
+      context: ./Front/Front
+      dockerfile: Dockerfile
+    image: chanisaranest/my-frontend_image:1.0
+
